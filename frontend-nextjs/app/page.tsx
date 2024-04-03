@@ -1,11 +1,10 @@
 import Image from "next/image";
+import { Categories } from "./components/home/Categories";
 
 export default function Home() {
   return (
-    <main className="">
-      <h1>Airbnb Clone</h1>
-
-      <h2 className="text-airbnb">Prueba de texto</h2>
+    <main className="max-w-[1500px] mx-auto px-6">
+      <Categories />
     </main>
   );
 }
