@@ -1,7 +1,7 @@
 import ReservationSideBar from "@/app/components/properties/ReservationSideBar";
 import Image from "next/image";
 
-export default function Property() {
+export default function PropertyByIdPage() {
   return (
     <>
       <section className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">

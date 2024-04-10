@@ -1,7 +1,7 @@
 import React from "react";
 import { MyreservationItem } from "../components/myReservation/MyreservationItem";
 
-export default function MyReservations() {
+export default function MyReservationsPage() {
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
       <h1 className="text-2xl font-bold my-6">My Reservations</h1>
