@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Property() {
   return (
-    <main className="max-w-[1120px] mx-auto px-6 pb-6">
+    <>
       <section className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">
         <img
           src="/place_img.webp"
@@ -54,6 +54,6 @@ export default function Property() {
         </div>
         <ReservationSideBar />
       </section>
-    </main>
+    </>
   );
 }
