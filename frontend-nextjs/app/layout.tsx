@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
 import { NavBar } from "./components/navbar/NavBar";
+import { CustomModal } from "./components/modals/CustomModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -22,6 +26,7 @@ export default function RootLayout({
         <div className="pt-32">
           <main className="max-w-[1500px] mx-auto px-6 pb-6">{children}</main>
         </div>
+        {/* <CustomModal isOpen={true}>ESTO ES UN PUTO CHILDREN</CustomModal> */}
       </body>
     </html>
   );
