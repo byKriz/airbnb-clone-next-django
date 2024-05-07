@@ -7,9 +7,11 @@ import UserIcon from "@/app/icons/navBar/UserIcon";
 
 import { useLoginModal } from "@/app/hooks/useLoginModal";
 import { MenuLink } from "./MenuLink";
+import { useSignupModal } from "@/app/hooks/useSignupModal";
 
 export function UserNav() {
   const loginModal = useLoginModal();
+  const signupModal = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
@@ -39,7 +41,7 @@ export function UserNav() {
               label="Sign up"
               onClick={() => {
                 console.log("Clicked sign up");
-                loginModal.open();
+                signupModal.open();
               }}
             />
             {/* <li className="hover:bg-gray-100 transition">Log in</li>

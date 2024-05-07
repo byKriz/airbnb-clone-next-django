@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "./components/navbar/NavBar";
 import { LoginModal } from "./components/modals/LoginModal";
+import { SignupModal } from "./components/modals/SignupModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         </div>
         {/* <CustomModal isOpen={true}>ESTO ES UN PUTO CHILDREN</CustomModal> */}
         <LoginModal />
+        <SignupModal />
       </body>
     </html>
   );
