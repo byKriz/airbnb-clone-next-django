@@ -1,10 +1,10 @@
 import React from "react";
 
 interface Props {
-    className?: string;
+  className?: string;
 }
 
-export default function CloseIcon({className}: Props) {
+export default function CloseIcon({ className }: Props) {
   return (
     <svg
       fill="none"

@@ -17,6 +17,7 @@ export function CustomModal({
   isOpen,
   close,
 }: Props) {
+  // const loginModal =
   const [showModal, setShowModal] = useState(isOpen);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export function CustomModal({
         >
           <div className="w-full h-auto rounded-xl relative flex flex-col bg-white">
             <header className="h-[60px] flex justify-center items-center p-6 rounded-t-md relative border-b">
-              <div className="p-3 absolute left-3 hover:bg-gray-300 rounded-full cursor-pointer">
+              <div className="p-3 absolute left-3 hover:bg-gray-300 rounded-full cursor-pointer" onClick={() => handleClose()}>
                 <CloseIcon className="size-5" />
               </div>
 
