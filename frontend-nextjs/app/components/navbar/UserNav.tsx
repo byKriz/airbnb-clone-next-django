@@ -31,8 +31,6 @@ export function UserNav() {
             <MenuLink
               label="Log in"
               onClick={() => {
-                console.log("Clicked log in");
-
                 setIsOpen(false);
                 loginModal.open();
               }}
@@ -40,7 +38,7 @@ export function UserNav() {
             <MenuLink
               label="Sign up"
               onClick={() => {
-                console.log("Clicked sign up");
+                setIsOpen(false);
                 signupModal.open();
               }}
             />

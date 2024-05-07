@@ -51,7 +51,7 @@ export function SignupModal() {
         <CustomButton
           name="Register"
           onClick={() => {
-            console.log("Register Clicked");
+            // console.log("Register Clicked");
           }}
         />
       </form>
